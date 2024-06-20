@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Short Circuit</h2>
+
+    <input type="number" id="input" placeholder="0'dan 100'e kadar bir sayi giriniz.">
+
+    <button onclick="showNumber()">Goster</button>
+    <div id="result"></div>
+
+    <script>
+
+        function showNumber(){
+         let num = document.querySelector("#input").value;
+         let result = document.querySelector("#result");
+
+        /*  if(num<0 || num>100){
+            alert("Lutfen 0'dan 100'e kadar bir sayi giriniz...");
+
+         }
+         else{
+            result.innerHTML=num;
+         } */
+
+         (num<0 || num>100)?alert("Lutfen 0'dan buyuk ve 100'")
+        }
+
+    </script>
+</body>
+</html>

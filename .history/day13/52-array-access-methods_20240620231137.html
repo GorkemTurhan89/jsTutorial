@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Access Meyhods</title>
+</head>
+<body>
+    <h2>Array Access Meyhods</h2>
+    
+    <script>
+
+        let animals = [ "cat", "dog" , "elephant","tiger","cat"];
+        let result; 
+        //1. -concat() bir array ile baska bir array ya da degeri birlestirerek yeni bir array return eder
+        //mevcut array bozulmaz, ayni kalir
+
+        result = animals.concat("wolf");
+        console.log(animals);
+        console.log(result);
+
+        let animals2= ["lion","rabbit","fox"];
+        animals = animals.concat(animals2);
+        console.log(animals);
+
+        //2 - includes() bir arrayin belirli bir elemani icerip icermedigini belirtir.
+        result = animals.includes("sheep");
+        console.log(result );
+
+        result = animals.includes("fox");
+        console.log(result);
+
+        //3 - indexof() arrayedeki elemanin ilk gordugu yerdegi indexini dondurur
+        //eleman dizide yoksa -1 return eder.
+
+        result = animals.indexOf("cat");
+        console.log("index :"+result)
+
+        //5 lastIndexOf ()
+
+        result = animals.lastIndexOf("cat");
+        console.log(result);
+
+        //5 join(), bir arrayin icindeki tum elemenalari aralarina bir veya daha fazla karakter koyarak birlestirip string olarak return eder
+
+        result = animals.join();
+        console.log(result);
+
+        result = animals.join("-");
+        console.log(result);
+        //6 toString() ile arrayin icindeki elemanlari tek bir string olarak donustutrru
+
+        result = animals.toString();
+        console.log(result);
+        console.log(typeof result);
+
+        //7 slice , bir dizinin elemanlarini belirtilen baslangic indexinden baslayarak bitis indexine gore bir kopyasini olusturarak yeni bir array dondurur
+        //bitis indexi dahil degildir
+
+        //slice yeni bir array return eder orgin array degismez
+        //splice ise origin arrayi mutated eder
+
+        result = animals.slice(2,5);
+        console.log(animals);
+        console.log()
+    </script>
+</body>
+</html>

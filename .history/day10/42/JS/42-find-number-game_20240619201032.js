@@ -1,0 +1,1 @@
+letlet numberInput =document.querySelector("#num");

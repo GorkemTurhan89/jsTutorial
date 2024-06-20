@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Practice</title>
+</head>
+<body>
+    <h2>While Loop Practice</h2>
+    
+    <input type="number" name="sayi" id="sayim">
+
+    <button onclick="hesapla()">Hesapla</button>
+    <h3 id="sonuc"></h3>
+</body>
+
+<script>
+
+    function hesapla (){
+       let  num =document.querySelector("#sayim").value;
+    
+        let toplam =0;
+
+
+       while (num>0){
+        toplam +=num%10;
+        num = num/10;
+       }
+       document.querySelector("#sonuc").innerHTML=num;
+    }
+</script>
+</html>

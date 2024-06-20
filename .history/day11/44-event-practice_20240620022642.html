@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Practice</title>
+    <style>
+        input,button{
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Practice</h2>
+
+    <input type="number" id="vize" placeholder="vize notu giriniz"> <br>
+    <input type="number" id="final" placeholder="final notu giriniz"> <br>
+    <button id="btn">Hesapla</button>
+    <div id="result"></div>
+    
+    <script>
+
+        //1- input'lardaki değerleri alacağız
+        //2- ortalamayi hesaplayan bir function yazacağiz
+        //3 - harf notunu belirleyen bir function olustur
+        //4 bu fonskiyonlari handler function icinde cagiri gerekli degerli elde edecegiz
+        //5- En son hepsini sayfaya yazdiracagiz.
+
+        document.querySelector("#btn").addEventListener("click", ()=>{
+             let vize =  document.querySelector("#vize").value;
+             let finali = document.querySelector("#final").value;
+
+
+        });
+
+        //calculate function
+        const calculateFunction =(a,b)=>{
+             return a*0.4+b*0.6;
+            
+        }
+
+
+    </script>
+</body>
+</html>

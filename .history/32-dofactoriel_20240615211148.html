@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Factoriyel</title>
+</head>
+<body>
+
+    <input type="number" name="sayim" id="sayi" placeholder="sayi giriniz">
+    <button onclick="calculate()">Hesala</button>
+    <div class="result"></div>
+    
+    <script>
+        function calculate(){
+            let numero = Number(document.querySelector("#sayi").value);
+            total=1;
+            if(numero > 0 ){
+
+            do{
+
+                total*= numero;
+                numero --;
+            }
+            while (numero>0);
+            document.querySelector(".result").innerHTML= total;
+        }
+        else{
+        document.querySelector(".result").innerHTML="Lutfen gecerli bir sayi giriniz."
+    }
+    }
+    9 video
+
+    </script>
+</body>
+</html>

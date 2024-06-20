@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eval</title>
+</head>
+<body>
+
+    <h2>Eval Function</h2>
+
+    <input type="text" id="input" placeholder="Sayi giriniz.">
+    <button onclick="calculate()">HEsapla</button>
+    <div id="result"></div>
+    
+    <script>
+        alert (eval("Math.sqrt(3+5 * 9 /2 -1)").toFixed(0))
+        //icinin degeri numeric olarak ne ise onu gosteririr
+        
+        
+        function calculate(){
+
+            let inputValue = document.querySelector("#input").value;
+            let result = eval(inputValue).toFixed(2);
+            document.querySelector("#result").innerHTML = result;
+
+        }
+    </script>
+</body>
+</html>
+<!-- To fixed ifadesi virgülden sonraki gösterilecek numara basamagini belirler -->
+ 7. video 1.21.23

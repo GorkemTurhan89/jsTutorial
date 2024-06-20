@@ -1,0 +1,22 @@
+.card{
+    border: 2px solid brown;
+    padding:7rem;
+    margin: 3rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card #num{
+    border:3px solid black;
+    border-radius: 3px;
+    background-color: aqua;
+    padding: 10px 10px;
+
+}
+
+.card #button{
+    border-radius: 8px;
+    padding: 7px 12px;
+    color: rgb(70,70, 70);
+    fo
+}

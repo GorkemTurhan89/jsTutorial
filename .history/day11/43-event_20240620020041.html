@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        button{
+            padding: 7px 20px;
+            margin: 10px;
+            font-size: 20px;
+            background-color: lightgreen;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Handling</h2>
+
+    <button id="btn1" onclick="sayHello()">Hello</button>
+    <button id="btn2">Hello</button>
+    <button id="btn3">Hello</button>
+    <button id="btn4">Hello</button>
+    <button id="btn5">Hello</button>
+
+  <script>
+    //1. Yöntem html icinde event listener tag icinde geciyor
+    function sayHello(){
+        alert("Merhaba Dünya")
+    }
+
+    //2.Yöntem js icinde event listener geciyor
+    document.querySelector("#btn2").onclick = sayHello;
+
+    let btn3 = document.querySelector("#btn3");
+    btn3.onclick =sayHello;
+
+    //3. Yöntem
+
+    let btn4 = document.querySelector("#btn4");
+    btn4.addEventListener("click",sayHello);
+
+    let btn5 = document.querySelector("#btn5");
+    btn5.onclick = ()=> alert ("Merhaba Dunya");
+
+
+  </script>
+    
+</body>
+</html>

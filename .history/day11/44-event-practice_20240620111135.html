@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Practice</title>
+    <style>
+        input,button{
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Practice</h2>
+
+    <input type="number" id="vize" placeholder="vize notu giriniz"> <br>
+    <input type="number" id="final" placeholder="final notu giriniz"> <br>
+    <button id="btn">Hesapla</button>
+    <div id="result"></div>
+    
+    <script>
+
+        //1- input'lardaki değerleri alacağız
+        //2- ortalamayi hesaplayan bir function yazacağiz
+        //3 - harf notunu belirleyen bir function olustur
+        //4 bu fonskiyonlari handler function icinde cagiri gerekli degerli elde edecegiz
+        //5- En son hepsini sayfaya yazdiracagiz.
+
+        document.querySelector("#btn").addEventListener("click", ()=>{
+             let vize =  document.querySelector("#vize").value;
+             let finali = document.querySelector("#final").value;
+
+             if(!isNoteValid(vize)|| !isNoteValid(finali)){
+                alert("Lutfen gecerli bir not giriniz.");
+                return;
+             }
+
+             let average = calculateFunction(vize,finali);
+             let letterGrade = convertToLetter(average);
+
+        document.querySelector("#result").innerHTML = `Ortalama: ${avarage} , Harf Notu: ${letterGrade},;
+     
+
+        
+        document.querySelector("#vize").value="";
+        document.querySelector("#final").value="";
+
+
+        });
+
+        //calculate function
+        const calculateFunction =(a,b)=>{
+             return a*0.4+b*0.6;
+            
+        }
+
+        //harfnotune donusturen fonc
+
+        const convertToLetter = (avg) =>{
+            let letter; 
+            switch (true){
+                case (avg>=90):
+                    letter= "A";
+                    break;  
+                    
+                    case (avg>=80):
+                    letter ="B";
+                    break;
+                    
+                    case (avg>=70):
+                    letter ="C";
+                    break;  
+                    
+                    case (avg>=50):
+                    letter ="D";
+                    break;
+
+                    case (avg<50):
+                        
+                    letter="D"
+                    break;
+
+                    default:
+                        letter="F";
+
+
+
+            }
+
+            return letter;
+        }
+
+        const isNoteValid =(point)=>{
+            return point>=0 && point<=100 && point;
+        }//hicligin nulllun degeri boolean olarak sifir oldugu icin
+
+//2:10  11 video
+    </script>
+</body>
+</html>

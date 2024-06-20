@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForloopDiscount</title>
+</head>
+<body>
+    <h2>For Loop Discount Rate Uygulamasi</h2>
+
+<input type="number" name="" id="discount">
+<button onclick="makeDiscount()">İndirim Uygula</button>
+
+    <ul id="products">
+        <li>Notebook <span>1500</span> $</li>
+        <li>Tblet <span>500</span> $</li>
+        <li>Klavye <span>200</span> $</li>
+        <li>Mouse <span>30</span> $</li>
+        <li>Memory Card <span>10</span> $</li>
+        <li>USB Card <span>50</span> $</li>
+        <li>Monitor <span>400</span> $</li>
+        <li>Headphone <span>100</span> $</li>
+    </ul>
+    <script>
+        function makeDiscount(){
+
+        }
+        //1. indirim oranlarini al
+        //2.ç fiyatlari al
+        //3.fiyatlara indirim oranlarini uygula
+        //4.Yeni fiyatlari span tag'lerine gireceğiz
+    
+
+        let discount = document.querySelector("#discount").value;
+
+        let priceList = document.querySelectorAll("#products li span");
+
+        console.log(priceList);
+    </script>
+    
+</body>
+</html>

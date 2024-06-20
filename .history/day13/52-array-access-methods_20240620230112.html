@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Access Meyhods</title>
+</head>
+<body>
+    <h2>Array Access Meyhods</h2>
+    
+    <script>
+
+        let animals = [ "cat", "dog" , "elephant","tiger"];
+        let result; 
+        //1. -concat() bir array ile baska bir array ya da degeri birlestirerek yeni bir array return eder
+        //mevcut array bozulmaz, ayni kalir
+
+        result = animals.concat("wolf");
+        console.log(animals);
+        console.log(result);
+
+        let animals2= ["lion","rabbit","fox"];
+        animals = animals.concat(animals2);
+        console.log(animals);
+
+        //2 - includes() bir arrayin belirli bir elemani icerip icermedigini belirtir.
+        result = animals.includes("sheep");
+        console.log(result );
+
+        result = animals.includes("fox");
+        console.log(result);
+
+        //3 - indexof() arrayedeki elemanin ilk gordugu yerdegi indexini dondurur
+        //eleman dizide yoksa -1 return eder.
+
+        result = animails.indexOf("cat");
+        console.log("index :")
+
+    </script>
+</body>
+</html>
