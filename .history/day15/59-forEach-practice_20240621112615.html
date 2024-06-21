@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach Practice</title>
+</head>
+<body>
+    <h2>ForEach Practice</h2>
+    
+
+
+    <script>
+
+//berlirtilen bir dizininin her bir elemanin 5 katini alarak ayri bir aray dizide for Each() ile
+
+let numbers=[-5,24,-13,7];
+
+let newNumbers=[];
+
+numbers.forEach((num)=>{
+    newNumbers.push(num*5);
+})
+
+console.log(newNumbers);
+console.log(numbers);
+
+let newnumbers2 = numbers.map((num)=>
+{
+    return num*5;
+})
+console.log(newNumbers);
+    </script>
+</body>
+</html>

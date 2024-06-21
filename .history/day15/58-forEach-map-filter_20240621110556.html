@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach Map Filter</title>
+</head>
+<body>
+
+
+
+    <h2>ForEach Map Filter</h2>
+    
+
+<script>
+
+    var numbers =[65,7,38,26];
+
+    console.log("For OF ----------------------------")
+    for (let num of numbers ){
+        console.log(num);//for of loop
+    }
+    console.log("For IN ----------------------------")
+    for(let k in numbers){
+    console.log(numbers[k]);//for in loop
+    }
+
+    console.log("For EACH ----------------------------")
+    //for each method
+    numbers.forEach((num)=>{
+        console.log(num);
+    })
+
+    console.log("For EACH  with index----------------------------")
+    //for each method
+    numbers.forEach((num,i)=>{
+        console.log(num + " "+i);
+    })
+
+    console.log("Map  method------uyeni bir array doner----------------------")
+     //map method
+    var newArray =numbers.map((num)=>{
+        return num*2;
+    })
+    console.log(newArray);
+    console.log(numbers);
+
+    console.log("Filter  method------filtremeleme yaparak yeni birarray dondurur. True olan elemanlari alir----------------------")
+    //Filter method
+    var filternumbers.filter((num)=>{
+        return num>18;
+    })
+
+</script>
+
+</body>
+</html>
