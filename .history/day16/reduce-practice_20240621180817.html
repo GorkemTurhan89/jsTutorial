@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Practice</title>
+</head>
+<body>
+    <h2>Reduce Practice</h2>
+
+    <Script>
+
+//bir Firma, 3000 Tl'den az olan maaşlara %10 zam yapmak istiyor ve zam yapilan bu kisilere toplam kac Tl odenecegini bilmek istiyor
+
+let salaries= [3000,2891,3500,4200,7000,2500,1500];
+
+let increaseSalaryTotal =salaries.filter((salary)=>salary<3000).map((salary)=>salary *=1.1).reduce((total,salary)=> total+salary,0 );
+
+increaseSalaryTotal
+
+
+    </Script>
+    
+
+
+</body>
+</html>
