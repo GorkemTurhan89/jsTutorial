@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <h1>DOM</h1></header>
+
+    <main>
+        <ul id="employeeList" class="list"><!-- comment -->
+            <li>Lorem. <span>➡️</span></li>
+            <li>Reprehenderit.<span>➡️</span></li>
+            <li>Aut.<span>➡️</span></li>
+            <li>Dignissimos.<span id="btn">➡️</span></li>
+            <li>Consectetur.<span>➡️</span></li>
+        </ul>
+    </main>
+
+
+    <script>    
+    //closet
+        const btn = document.getElementById("btn");
+        btn.closest("main").classList.add("hello");
+
+    </script>
+</body>
+</html>
